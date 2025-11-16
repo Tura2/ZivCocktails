@@ -1,15 +1,29 @@
 @import "tailwindcss";
 
 :root {
-  --surface-base: #130d0c;
-  --surface-panel: rgba(29, 18, 16, 0.6);
-  --surface-glass: rgba(35, 22, 18, 0.74);
-  --ink-strong: #fff2d5;
-  --ink-soft: #f7d1a8;
-  --accent-primary: #f2bf5e;
-  --accent-secondary: #9b86f5;
-  --stroke: rgba(242, 191, 94, 0.32);
-  --danger: #ff6f61;
+  color-scheme: light;
+  --color-bg-page: #f1f5f9; /* slate-100 */
+  --color-bg-card: #ffffff;
+  --color-bg-muted: #f8fafc;
+  --color-text-primary: #0f172a; /* slate-900 */
+  --color-text-secondary: #475569; /* slate-600 */
+  --color-text-tertiary: #94a3b8; /* slate-400 */
+  --color-border-subtle: #e2e8f0; /* slate-200 */
+  --color-border-strong: #cbd5f5;
+  --color-brand-primary: #6366f1; /* indigo-500 */
+  --color-brand-primary-hover: #4f46e5; /* indigo-600 */
+  --color-brand-primary-soft: #e0e7ff;
+  --color-brand-accent: #22c55e; /* success */
+  --color-brand-accent-soft: #dcfce7;
+  --color-warning: #f59e0b;
+  --color-warning-soft: #fef3c7;
+  --color-danger: #ef4444;
+  --color-danger-soft: #fee2e2;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --shadow-soft: 0 14px 30px rgba(15, 23, 42, 0.08);
+  --shadow-ring: 0 0 0 4px rgba(99, 102, 241, 0.15);
 }
 
 * {
@@ -18,10 +32,22 @@
 
 body {
   margin: 0;
-  background-color: var(--surface-base);
-  color: var(--ink-strong);
-  font-family: var(--font-display), sans-serif;
-  letter-spacing: 0.02em;
+  min-height: 100vh;
+  background-color: var(--color-bg-page);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans), system-ui, -apple-system, "Segoe UI", sans-serif;
+  letter-spacing: 0.01em;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
 }
 
 .mono {

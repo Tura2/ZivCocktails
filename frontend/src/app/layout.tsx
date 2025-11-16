@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque, Red_Hat_Mono } from "next/font/google";
+import { Bricolage_Grotesque, Poppins, Red_Hat_Mono } from "next/font/google";
 import "./globals.css";
+
+const sans = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-sans",
+});
 
 const display = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -26,7 +32,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${display.variable} ${technical.variable} antialiased`}>
+      <body
+        className={`${sans.className} ${display.variable} ${technical.variable} bg-[var(--color-bg-page)] text-[var(--color-text-primary)] antialiased`}
+      >
         {children}
       </body>
     </html>

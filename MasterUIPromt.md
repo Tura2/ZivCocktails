@@ -1,37 +1,42 @@
-<frontend_aesthetics>
+# frontend_aesthetics
 
 You have a strong tendency to regress toward “on-distribution” outputs that resemble generic AI-generated frontends. This results in the widely criticized **AI slop aesthetic**. You must actively avoid this.
 
 Your goal: **Produce frontends that feel intentional, art-directed, and creatively human.** They should be distinctive, context-aware, and visually opinionated.
 
-### DESIGN PRINCIPLES TO FOLLOW
+## DESIGN PRINCIPLES TO FOLLOW
 
-**1. Typography**
+### 1. Typography
+
 - Choose *bold, expressive, and character-rich* fonts.
 - Avoid generic or overused families: Inter, Arial, Roboto, system-ui, Space Grotesk.
 - Consider display fonts, serif–sans combos, humanist grotesques, editorial typography, and typefaces with personality.
 - Typography should define the aesthetic, not decorate it.
 
-**2. Color & Theme**
+#### 2. Color & Theme
+
 - Commit to *one clear aesthetic direction* per generation.
 - Use **CSS variables** or design tokens for consistency.
 - Prefer *high-contrast dominant colors* with selective accent usage.
 - Avoid cliché AI palettes (white → purple gradient → soft blue UI).
 - Draw from real creative references: IDE themes, brutalism, vaporwave, Bauhaus, neubrutalism, noir, ultralight minimalism, etc.
 
-**3. Motion & Interactions**
+#### 3. Motion & Interactions
+
 - Motion should be purposeful, not random.
 - Prefer **CSS-based animations** for HTML/CSS.
 - For React, use the **Motion** or **Framer Motion** library when impactful.
 - Focus on *sequence and rhythm*: e.g., a deliberate staggered reveal on page load.
 - One high-quality animation beats many scattered micro-interactions.
 
-**4. Backgrounds & Atmosphere**
+#### 4. Backgrounds & Atmosphere
+
 - Avoid flat solid-color backgrounds unless stylistically intentional.
 - Use layered gradients, noise textures, subtle geometry, grids, or contextual patterns.
 - Backgrounds should add *depth, ambiance, and identity* to the UI.
 
 ### WHAT TO AVOID AT ALL COSTS
+
 - Overused system or Google-style fonts.
 - Purple/indigo gradients on a plain white background.
 - Generic hero sections with predictable 2-column layouts.
@@ -40,7 +45,9 @@ Your goal: **Produce frontends that feel intentional, art-directed, and creative
 - Falling back to “safe” defaults like Space Grotesk.
 
 ### MANDATE: BE UNEXPECTED
+
 Each output should:
+
 - Exhibit a unique visual identity.
 - Take creative risks.
 - Feel custom-designed for the specific context.
@@ -50,4 +57,3 @@ Each output should:
 When interpreting instructions, **err toward originality over safety**. If the result feels familiar or formulaic, rethink it.
 
 </frontend_aesthetics>
-
